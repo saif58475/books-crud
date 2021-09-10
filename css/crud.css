@@ -1,0 +1,17 @@
+
+/* overright on the class that style the table */
+.hd{
+color: tomato;
+}
+/* overright on the class that style the input tag */
+.form-control{
+    border: 1px solid #cd853f;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+button a {
+text-decoration: none;
+color:crimson
+}
+button a:hover{
+    color: white;
+}

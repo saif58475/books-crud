@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/3276526.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/crud.css">
+    <title>CRUD assignment using localstorage</title>
+</head>
+<body>
+  <!-- this form that we will e used to add books & their links  -->
+    <div class="container my-5" id="crudform">
+        <div class="text-center">
+      <label for="" class="py-2 fs-3  hd fw-bold ">ENTER THE BOOK NAME </label>
+      <input class="form-control form-control-lg" type="text" id="bookname" placeholder="Book's name" aria-label=".form-control-lg example">    
+    </div>
+    <div class="text-center mt-5">
+        <label for="" class="py-2 fs-3 hd fw-bold ">ENTER THE BOOK URL</label>
+        <input class="form-control form-control-lg" type="text" id="bookurl" placeholder="https://www.example.com" aria-label=".form-control-lg example">    
+      </div>
+      <div class="container d-flex justify-content-around my-5">
+        <button type="button" class="btn btn-primary btn-lg" id="add" onclick="addbook()">Add book</button>
+        <button type="button" class="btn btn-secondary btn-lg" id="clear" onclick="clr()">Clear</button>
+      </div>
+    </div>
+         <!-- the products view -->
+    <div class="container my-5 ">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col" class="fs-2 fw-bold hd">ID</th>
+                <th scope="col" class="fs-2 fw-bold hd">BOOK NAME</th>
+                <!-- <th scope="col" class="fs-2 fw-bold hd">URL</th> -->
+                <th scope="col" class="fs-2 fw-bold hd "  href="">Visit</th>
+                <th scope="col" class="fs-2 fw-bold hd">Delete</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">  
+              
+            
+            </tbody>
+          </table>
+    </div>
+
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+    <script src="js/crud.js"></script>
+</body>
+</html>
