@@ -33,7 +33,7 @@ function displayitems(){
                 <th scope="row" class="fs-4">${i}</th>
                 <td class="fs-4">${books[i].nameofthebook}</td>
                 
-                <td  class="fs-4 px-5"><button class="btn btn-outline-danger"><a id="visiting" onmouseleave="lft(${i})" onmouseover="vst(${i})" href="">Visit</a></button></td>
+                <td  class="fs-4 px-5"><button class="btn btn-outline-danger"><a id="visiting" onmouseleave="lft(${i})" onmouseover="vst(${i})" href="${books[i].urlofthebook}  ">Visit</a></button></td>
                 <td  class="fs-4 px-5"><button class="btn btn-outline-danger" onclick="dlt(${i})">Delete</button></td>                
               </tr> `;
     }
@@ -50,7 +50,7 @@ function display_reload(){
         var str2 = `<tr>
         <th scope="row" class="fs-4">${i}</th>
         <td class="fs-4">${books[i].nameofthebook}</td>
-        <td  class="fs-4 px-5"><button class="btn btn-outline-danger"><a id="visiting" onmouseleave="lft(${i})" onmouseover="vst(${i})" href="">Visit</a></button></td>
+        <td  class="fs-4 px-5"><button class="btn btn-outline-danger"><a id="visiting" onmouseleave="lft(${i})" onmouseover="vst(${i})" href="${books[i].urlofthebook}">Visit</a></button></td>
         <td  class="fs-4 px-5"><button class="btn btn-outline-danger" onclick="dlt(${i})">Delete</button></td>
         
       </tr>`;
